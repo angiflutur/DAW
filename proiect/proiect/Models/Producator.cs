@@ -5,7 +5,7 @@ namespace proiect.Models
     public class Producator
     {
         [Key]
-        public string IdProducator { get; set; }
+        public int IdProducator { get; set; }
 
         public string NumeProducator { get; set; }
 

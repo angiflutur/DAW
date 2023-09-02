@@ -5,7 +5,7 @@ namespace proiect.Models
     public class Actor
     {
         [Key]
-        public string IdActor { get; set; }
+        public int IdActor { get; set; }
     
         public string NumeActor { get; set; }
     

@@ -10,6 +10,7 @@ namespace proiect.Models
         public int IdFilm {  get; set; }
         public string Titlu { get; set; }
         public double Pret {  get; set; }
+        public string Descriere {  get; set; }
         public string Imagine { get; set; }
         
         public CategorieFilm CategorieFilm { get; set; }

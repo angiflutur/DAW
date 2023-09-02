@@ -5,6 +5,8 @@
         Actiune = 1,
         Comedie,
         Drama,
-        Documentar
+        Documentar,
+        Desene,
+        Horror
     }
 }
