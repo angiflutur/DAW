@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using proiect.Data;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,10 +27,22 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "actorDelete",
+    pattern: "Actori/Delete/{id?}",
+    defaults: new { controller = "Actori", action = "Delete" });
+
+app.MapControllerRoute(
+    name: "actorDeleteConfirmed",
+    pattern: "Actori/DeleteConfirmed/{id?}",
+    defaults: new { controller = "Actori", action = "DeleteConfirmed" });
+
 AppDbInitializer.Seed(app);
 app.Run();
