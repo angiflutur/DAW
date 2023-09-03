@@ -6,11 +6,11 @@ namespace proiect.Models
     {
         [Key]
         public int IdActor { get; set; }
-    
+        [Display(Name = "Nume actor")]
         public string NumeActor { get; set; }
-    
+        [Display(Name = "Poza de profil")]
         public string Imagine { get; set; }
-
+        [Display(Name = "Biografie")]
         public string Bio {  get; set; }
 
         // definire relatii
