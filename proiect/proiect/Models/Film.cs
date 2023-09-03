@@ -12,7 +12,8 @@ namespace proiect.Models
         public double Pret {  get; set; }
         public string Descriere {  get; set; }
         public string Imagine { get; set; }
-        
+        public int Stars { get; set; }
+
         public CategorieFilm CategorieFilm { get; set; }
 
         // definire relatii

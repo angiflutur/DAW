@@ -32,6 +32,7 @@ namespace proiect.Data
         public DbSet<Actor_Film> Actori_Filme { get; set; }
         public DbSet<Cinema> Cinematografe { get; set; }
         public DbSet<Producator> Producatori { get; set; }
+        public DbSet<Owner> Owners { get; set; }
 
     }
 }
